@@ -23,6 +23,7 @@ const CustomerRegister = () => {
 
     try {
       const result: any = await registration(data);
+      
       if (result.data.data.success) {
         toast.success(`${result?.message}`, {
           id: toastId,

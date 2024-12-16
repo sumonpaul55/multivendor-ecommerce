@@ -38,6 +38,7 @@ const VendorRegister = () => {
       const shoplogo = await uploadImageToCloudinary(image);
       console.log({ ...data, shoplogo: shoplogo });
       const result: any = await registration({ data, shoplogo: shoplogo });
+      console.log(result)
       console.log(result);
 
       //   if (result.data.data.success) {
